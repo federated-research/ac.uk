@@ -1,14 +1,16 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button"
+import { Map } from "@/components/core/map";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="w-full relative h-screen overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-start z-10">
+        <div className="px-6 lg:px-8 w-full">
+          <div className="mx-auto max-w-5xl">
+              <Map />
 
-        <Button>Click me</Button>
-    
-      </main>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
