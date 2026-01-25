@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Nav } from "@/components/core/nav";
 
 const figtree = Figtree({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Nav />
           {children}
         </ThemeProvider>
       </body>
