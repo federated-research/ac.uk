@@ -13,6 +13,11 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Federated Resarch",
   description: "Accelerating Research.",
+  icons: {
+    icon: "/icons/favicon.ico",
+    apple: "/icons/apple-icon.png",
+  },
+  manifest: "/icons/manifest.json",
 };
 
 export default function RootLayout({
