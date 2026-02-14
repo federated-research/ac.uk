@@ -3,8 +3,8 @@ import WorldMap from "@/components/ui/world-map";
 
 export function Map() {
   return (
-    <div className=" py-40 w-full h-full">
-      <div className="max-w-7xl mx-auto text-center mt-10 mb-10">
+    <div className="py-12 w-full">
+      <div className="text-center mb-10">
         <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
           Accelerating Research
         </p>
