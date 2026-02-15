@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpRightIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { FadeIn } from "@/components/core/fade-in";
 
@@ -174,6 +175,69 @@ export function SectionBreak({ label }: { label?: string }) {
   return (
     <div className="mx-auto max-w-3xl px-6 lg:px-8 py-4">
       <Separator />
+    </div>
+  );
+}
+
+/* ── Resources ──────────────────────────────────────────── */
+
+export function Resources({
+  title = "Further reading",
+  description,
+  links,
+}: {
+  title?: string;
+  description?: string;
+  links: {
+    href: string;
+    title: string;
+    description?: string;
+    label?: string;
+  }[];
+}) {
+  return (
+    <div className="mx-auto max-w-3xl px-6 lg:px-8 py-12 md:py-16">
+      <FadeIn>
+        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+          {title}
+        </p>
+        {description && (
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            {description}
+          </p>
+        )}
+      </FadeIn>
+      <div className="mt-6">
+        {links.map((link, i) => (
+          <FadeIn key={i} delay={i * 0.05}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start justify-between gap-4 border-t py-5 transition-colors hover:text-brand"
+            >
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-3">
+                  <span className="font-semibold tracking-tight">
+                    {link.title}
+                  </span>
+                  {link.label && (
+                    <span className="shrink-0 border px-2 py-0.5 text-xs text-muted-foreground">
+                      {link.label}
+                    </span>
+                  )}
+                </div>
+                {link.description && (
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {link.description}
+                  </p>
+                )}
+              </div>
+              <ArrowUpRightIcon className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-brand" />
+            </a>
+          </FadeIn>
+        ))}
+      </div>
     </div>
   );
 }

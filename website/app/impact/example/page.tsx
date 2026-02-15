@@ -6,6 +6,7 @@ import {
   Prose,
   Figure,
   Quote,
+  Resources,
 } from "@/components/core/case-study";
 
 export default function Page() {
@@ -109,6 +110,37 @@ export default function Page() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </Summary>
+
+      <Resources
+        description="Explore the research, tools, and publications from this programme."
+        links={[
+          {
+            href: "https://example.com",
+            title: "Publication title in journal",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            label: "Paper",
+          },
+          {
+            href: "https://example.com",
+            title: "Project repository",
+            description: "Source code and documentation for the platform.",
+            label: "GitHub",
+          },
+          {
+            href: "https://example.com",
+            title: "Programme announcement blog post",
+            label: "Blog",
+          },
+          {
+            href: "https://example.com",
+            title: "Technical documentation",
+            description:
+              "Implementation guides and API reference for collaborators.",
+            label: "Docs",
+          },
+        ]}
+      />
     </>
   );
 }
