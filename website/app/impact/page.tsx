@@ -1,13 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/core/fade-in";
 
 const caseStudies = [
   {
     title: "Case study title",
-    status: "Active",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
@@ -15,7 +13,6 @@ const caseStudies = [
   },
   {
     title: "Case study title",
-    status: "Active",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
@@ -23,7 +20,6 @@ const caseStudies = [
   },
   {
     title: "Case study title",
-    status: "Active",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
@@ -31,7 +27,6 @@ const caseStudies = [
   },
   {
     title: "Case study title",
-    status: "Launching",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
@@ -64,13 +59,7 @@ export default function Page() {
             <Link href={caseStudies[0].href} className="group block">
               <div className="grid md:grid-cols-2">
                 <div className="py-12 md:py-20 md:pr-12 flex flex-col justify-center">
-                  <Badge
-                    variant="default"
-                    className="w-fit"
-                  >
-                    {caseStudies[0].status}
-                  </Badge>
-                  <h2 className="mt-4 group-hover:text-brand transition-colors">
+                  <h2 className="mt-4 group-hover:text-brand transition-colors dark:group-hover:text-white">
                     {caseStudies[0].title}
                   </h2>
                   <p className="mt-3 text-muted-foreground">
@@ -109,20 +98,7 @@ export default function Page() {
                       alt=""
                       className="w-full aspect-[16/10] object-cover"
                     />
-                    <div className="mt-5 flex items-center gap-3">
-                      <Badge
-                        variant={
-                          study.status === "Active"
-                            ? "default"
-                            : study.status === "Launching"
-                              ? "secondary"
-                              : "outline"
-                        }
-                      >
-                        {study.status}
-                      </Badge>
-                    </div>
-                    <h3 className="mt-3 group-hover:text-brand transition-colors">
+                    <h3 className="mt-3 group-hover:text-brand transition-colors dark:group-hover:text-white">
                       {study.title}
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground flex-1">

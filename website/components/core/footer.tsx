@@ -11,8 +11,7 @@ export function Footer() {
               Federated Research
             </Link>
             <p className="mt-2 max-w-xs text-sm text-white/70">
-              Accelerating research through federated collaboration across
-              institutions and borders.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
             </p>
           </div>
 
@@ -31,10 +30,6 @@ export function Footer() {
 
         <Separator className="my-8 bg-white/20" />
 
-        <p className="text-sm text-white/50">
-          &copy; {new Date().getFullYear()} Federated Research. All rights
-          reserved.
-        </p>
       </div>
     </footer>
   );

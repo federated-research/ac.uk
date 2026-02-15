@@ -11,7 +11,7 @@ export default function Page() {
       <section className="py-28 md:py-40">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
-            <h1 className="max-w-4xl text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[1]">
+            <h1 className="max-w-4xl text-6xl md:text-8xl lg:text-9xl">
               Federated
               <br />
               Research
