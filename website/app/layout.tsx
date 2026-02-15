@@ -3,16 +3,15 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Nav } from "@/components/core/nav";
+import { Footer } from "@/components/core/footer";
 
 const figtree = Figtree({
-  variable: "--font-geist-sans",
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
-  title: "Federated Resarch",
+  title: "Federated Research",
   description: "Accelerating Research.",
   icons: {
     icon: "/icons/favicon.ico",
@@ -28,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${figtree.variable} antialiased`}
-      >
+      <body className={`${figtree.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -38,9 +35,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
-          <main className="mx-auto max-w-5xl px-6 lg:px-8 py-8">
-            {children}
-          </main>
+          <main>{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

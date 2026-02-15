@@ -1,3 +1,143 @@
+"use client";
+
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { FadeIn } from "@/components/core/fade-in";
+
+const caseStudies = [
+  {
+    title: "Case study title",
+    status: "Active",
+    href: "/impact/example",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    image: "/image.jpg",
+  },
+  {
+    title: "Case study title",
+    status: "Active",
+    href: "/impact/example",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    image: "/image.jpg",
+  },
+  {
+    title: "Case study title",
+    status: "Active",
+    href: "/impact/example",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    image: "/image.jpg",
+  },
+  {
+    title: "Case study title",
+    status: "Launching",
+    href: "/impact/example",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    image: "/image.jpg",
+  },
+];
+
 export default function Page() {
-  return <h1>Impact</h1>;
+  return (
+    <>
+      {/* Header */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <FadeIn>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Our Impact
+            </p>
+            <h1 className="mt-4 max-w-2xl">Page headline</h1>
+            <p className="mt-6 max-w-xl text-xl text-muted-foreground leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Featured case study */}
+      <section className="border-t">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <FadeIn>
+            <Link href={caseStudies[0].href} className="group block">
+              <div className="grid md:grid-cols-2">
+                <div className="py-12 md:py-20 md:pr-12 flex flex-col justify-center">
+                  <Badge
+                    variant="default"
+                    className="w-fit"
+                  >
+                    {caseStudies[0].status}
+                  </Badge>
+                  <h2 className="mt-4 group-hover:text-brand transition-colors">
+                    {caseStudies[0].title}
+                  </h2>
+                  <p className="mt-3 text-muted-foreground">
+                    {caseStudies[0].description}
+                  </p>
+                  <span className="mt-6 text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    Read case study &rarr;
+                  </span>
+                </div>
+                <div className="border-t md:border-t-0 md:border-l">
+                  <img
+                    src={caseStudies[0].image}
+                    alt=""
+                    className="w-full h-full object-cover aspect-[4/3] md:aspect-auto"
+                  />
+                </div>
+              </div>
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Case study grid */}
+      <section className="border-t">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid md:grid-cols-3">
+            {caseStudies.slice(1).map((study, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <Link
+                  href={study.href}
+                  className={`group block h-full ${i > 0 ? "border-t md:border-t-0 md:border-l" : ""}`}
+                >
+                  <div className="py-10 md:py-12 md:px-6 first:md:pl-0 last:md:pr-0 h-full flex flex-col">
+                    <img
+                      src={study.image}
+                      alt=""
+                      className="w-full aspect-[16/10] object-cover"
+                    />
+                    <div className="mt-5 flex items-center gap-3">
+                      <Badge
+                        variant={
+                          study.status === "Active"
+                            ? "default"
+                            : study.status === "Launching"
+                              ? "secondary"
+                              : "outline"
+                        }
+                      >
+                        {study.status}
+                      </Badge>
+                    </div>
+                    <h3 className="mt-3 group-hover:text-brand transition-colors">
+                      {study.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-muted-foreground flex-1">
+                      {study.description}
+                    </p>
+                    <span className="mt-4 text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      Read case study &rarr;
+                    </span>
+                  </div>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
