@@ -24,6 +24,13 @@ export const Nav = () => {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
+                <Link href="/community" passHref>
+                  <NavigationMenuLink className={navLinkClass}>
+                    Community
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <Link href="/journey" passHref>
                   <NavigationMenuLink className={navLinkClass}>
                     Journey
