@@ -5,28 +5,28 @@ import { FadeIn } from "@/components/core/fade-in";
 
 const caseStudies = [
   {
-    title: "Case study title",
+    title: "Cohort Discovery: Bunny",
+    href: "/impact/cohort-discovery",
+    description:
+      "Cohort Discovery helps researchers determine the size of the population which may be relevant to their research within different datasets.",
+    image: "/image.jpg",
+  },
+  {
+    title: "OMOP Data Standards: Carrot",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
     image: "/image.jpg",
   },
   {
-    title: "Case study title",
+    title: "DPUK and ADDI",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
     image: "/image.jpg",
   },
   {
-    title: "Case study title",
-    href: "/impact/example",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
-    image: "/image.jpg",
-  },
-  {
-    title: "Case study title",
+    title: "Cross Border Federation: UK and Singapore",
     href: "/impact/example",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
