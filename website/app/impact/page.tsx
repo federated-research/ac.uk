@@ -8,7 +8,7 @@ const caseStudies = [
     title: "Cohort Discovery: Bunny",
     href: "/impact/cohort-discovery",
     description:
-      "Cohort Discovery helps researchers determine the size of the population which may be relevant to their research within different datasets.",
+      "Researchers need to know which patients existed in data. Now they can ask and get an answer the same day.",
     image: "/image.jpg",
   },
   {
