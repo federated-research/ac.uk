@@ -103,7 +103,7 @@ export default function Page() {
       </Summary>
 
       <Resources
-        description="Explore the research, tools, and publications from this programme."
+        description="Read more about Cohort Discovery and Bunny."
         links={[
           {
             href: "https://healthdatagateway.org/en/about/cohort-discovery",

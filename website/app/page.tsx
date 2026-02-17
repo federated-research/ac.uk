@@ -12,21 +12,20 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
             <h1 className="max-w-4xl text-6xl md:text-8xl lg:text-9xl">
-              Federated
+              Accelerating
               <br />
               Research
             </h1>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-8 max-w-lg text-xl text-muted-foreground leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Connecting researchers to data they couldn't reach before.
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="mt-10">
               <Button asChild size="lg" className="text-sm">
-                <Link href="/impact">Button label</Link>
+                <Link href="/impact">What we've done</Link>
               </Button>
             </div>
           </FadeIn>

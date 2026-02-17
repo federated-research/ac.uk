@@ -41,12 +41,9 @@ export default function Page() {
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              Our Impact
-            </p>
-            <h1 className="mt-4 max-w-2xl">Page headline</h1>
+            <h1 className="mt-4 max-w-2xl">Our Impact</h1>
             <p className="mt-6 max-w-xl text-xl text-muted-foreground leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Where open infrastructure meets real-world research outcomes.
             </p>
           </FadeIn>
         </div>

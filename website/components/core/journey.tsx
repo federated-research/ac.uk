@@ -13,12 +13,78 @@ function Milestone({ text }: { text: string }) {
 export function Journey() {
   const data = [
     {
+      title: "2020",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm text-muted-foreground">
+            COCONNECT
+          </p>
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+        </div>
+      ),
+    },
+    {
+      title: "2022",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm text-muted-foreground">
+            NHS Secure Data Environment Announced
+          </p>
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+        </div>
+      ),
+    },
+    {
+      title: "2023",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm text-muted-foreground">
+            DAREUK: TREFX and Teleport
+          </p>
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div className="space-y-3">
           <p className="text-sm text-muted-foreground">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+        </div>
+      ),
+    },
+    {
+      title: "2024",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm text-muted-foreground">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+          <Milestone text="Milestone description" />
+        </div>
+      ),
+    },
+    {
+      title: "2024",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm text-muted-foreground">
+            EOSC Entrust
           </p>
           <Milestone text="Milestone description" />
           <Milestone text="Milestone description" />
@@ -34,9 +100,9 @@ export function Journey() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
+          <Milestone text="TREXT" />
+          <Milestone text="FEDS" />
+          <Milestone text="DAREUK: Trevolution" />
         </div>
       ),
     },

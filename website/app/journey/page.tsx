@@ -9,12 +9,11 @@ export default function Page() {
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
-            <h1>Page headline</h1>
+            <h1>Our Journey</h1>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-6 max-w-2xl text-xl text-muted-foreground leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The path from fragmented health data to a resource researchers can use.
             </p>
           </FadeIn>
         </div>
