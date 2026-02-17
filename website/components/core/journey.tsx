@@ -56,37 +56,9 @@ export function Journey() {
       content: (
         <div className="space-y-3">
           <p className="text-sm text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Federated Analytics
           </p>
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
-        </div>
-      ),
-    },
-    {
-      title: "2024",
-      content: (
-        <div className="space-y-3">
-          <p className="text-sm text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
-          <Milestone text="Milestone description" />
-        </div>
-      ),
-    },
-    {
-      title: "2024",
-      content: (
-        <div className="space-y-3">
-          <p className="text-sm text-muted-foreground">
-            EOSC Entrust
-          </p>
-          <Milestone text="Milestone description" />
+          <Milestone text="EOSC Entrust" />
           <Milestone text="Milestone description" />
           <Milestone text="Milestone description" />
         </div>

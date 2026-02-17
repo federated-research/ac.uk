@@ -19,7 +19,7 @@ export default function Page() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-8 max-w-lg text-xl text-muted-foreground leading-relaxed">
-              Connecting researchers to data they couldn't reach before.
+              Connecting researchers to data they couldn't reach.
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>

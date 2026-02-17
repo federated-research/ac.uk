@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { Logo } from "@/components/core/logo";
 
 export function Footer() {
   return (
@@ -7,11 +8,11 @@ export function Footer() {
       <div className="mx-auto max-w-5xl px-6 lg:px-8 py-16">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div>
-            <Link href="/" className="text-xl font-semibold tracking-tight">
-              Federated Research
+            <Link href="/" className="flex items-center mb-2">
+              <Logo />
             </Link>
             <p className="mt-2 max-w-xs text-sm text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+              Connecting researchers to data they couldn't reach.
             </p>
           </div>
 
