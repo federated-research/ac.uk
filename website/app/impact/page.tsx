@@ -29,7 +29,7 @@ const caseStudies = [
     title: "Cross Border Federation: UK and Singapore",
     href: "/impact/sg-uk",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+      "Two countries, one shared ambition: giving researchers access to health data across 10,000 kilometres.",
     image: "/image.jpg",
   },
 ];
