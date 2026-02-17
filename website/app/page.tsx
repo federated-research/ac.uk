@@ -78,8 +78,7 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-24 md:py-36">
           <FadeIn>
             <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
-              Statement headline that captures the mission in one or two
-              compelling sentences.
+              Enable access to more datasets, faster and safely, through adoption and implementation of federated technologies
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -90,7 +89,7 @@ export default function Page() {
                 size="lg"
                 className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white text-sm"
               >
-                <Link href="/mission">Button label</Link>
+                <Link href="/mission">Our Mission</Link>
               </Button>
             </div>
           </FadeIn>
@@ -102,15 +101,12 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-20 md:py-28">
           <div className="grid gap-8 md:grid-cols-2 md:gap-16">
             <FadeIn>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                The Network
-              </p>
-              <h2 className="mt-3">Section headline</h2>
+              <h2 className="mt-3">The Network</h2>
             </FadeIn>
             <FadeIn delay={0.1} className="flex items-end">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A network of partners working together to accelerate research.
+                (Logos!)
               </p>
             </FadeIn>
           </div>

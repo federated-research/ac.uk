@@ -27,7 +27,7 @@ const caseStudies = [
   },
   {
     title: "Cross Border Federation: UK and Singapore",
-    href: "/impact/example",
+    href: "/impact/sg-uk",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
     image: "/image.jpg",
