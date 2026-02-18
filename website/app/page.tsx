@@ -19,7 +19,7 @@ export default function Page() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-8 max-w-lg text-xl text-muted-foreground leading-relaxed">
-              Connecting researchers to data they couldn't reach.
+              Connecting researchers to data they can't reach.
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -37,7 +37,7 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-1">
           <FadeIn>
             <img
-              src="/image.jpg"
+              src="/images/hero.jpg"
               alt=""
               className="w-full aspect-[21/9] object-cover"
             />
@@ -50,9 +50,9 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="grid md:grid-cols-3">
             {[
-              { number: "01", title: "Pillar headline" },
-              { number: "02", title: "Pillar headline" },
-              { number: "03", title: "Pillar headline" },
+              { number: "01", title: "Find the Data", description: "Researchers can search across NHS and international datasets to assess feasibility before a study ever begins." },
+              { number: "02", title: "Access the Data", description: "Secure, governed pathways that get approved researchers into the data they need, faster than ever before." },
+              { number: "03", title: "Use the Data", description: "Federated tools that let researchers run analyses across multiple institutions without data leaving its source." },
             ].map((pillar, i) => (
               <FadeIn
                 key={pillar.number}
@@ -64,8 +64,7 @@ export default function Page() {
                 </p>
                 <h3 className="mt-3">{pillar.title}</h3>
                 <p className="mt-3 text-muted-foreground leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore.
+                  {pillar.description}
                 </p>
               </FadeIn>
             ))}

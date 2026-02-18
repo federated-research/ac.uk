@@ -12,24 +12,24 @@ const caseStudies = [
     image: "/image.jpg",
   },
   {
-    title: "OMOP Data Standards: Carrot",
-    href: "/impact/example",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
-    image: "/image.jpg",
-  },
-  {
-    title: "DPUK and ADDI",
-    href: "/impact/example",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
-    image: "/image.jpg",
-  },
-  {
     title: "Cross Border Federation: UK and Singapore",
     href: "/impact/sg-uk",
     description:
       "Two countries, one shared ambition: giving researchers access to health data across 10,000 kilometres.",
+    image: "/image.jpg",
+  },
+  {
+    title: "DPUK and ADDI",
+    href: "/impact/dpuk-addi",
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    image: "/image.jpg",
+  },
+  {
+    title: "OMOP Data Standards: Carrot",
+    href: "/impact/omop-carrot",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
     image: "/image.jpg",
   },
 ];

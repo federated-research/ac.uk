@@ -15,19 +15,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Image */}
-      <section className="border-t">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <FadeIn>
-            <img
-              src="/image.jpg"
-              alt=""
-              className="w-full aspect-[3/1] object-cover"
-            />
-          </FadeIn>
-        </div>
-      </section>
-
       {/* The Problem */}
       <section className="border-t py-20 md:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">

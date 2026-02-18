@@ -12,7 +12,7 @@ export function Footer() {
               <Logo />
             </Link>
             <p className="mt-2 max-w-xs text-sm text-white/70">
-              Connecting researchers to data they couldn't reach.
+              Connecting researchers to data they can't reach.
             </p>
           </div>
 
