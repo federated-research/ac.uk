@@ -4,10 +4,11 @@ import {
   Summary,
   SectionBreak,
   Prose,
-  Figure,
   Quote,
   Resources,
 } from "@/components/core/case-study";
+import { UKMap } from "@/components/core/uk-map";
+import { FadeIn } from "@/components/core/fade-in";
 
 export default function Page() {
   return (
@@ -49,11 +50,11 @@ export default function Page() {
         </p>
       </Prose>
 
-      <Figure
-        src="/image.jpg"
-        caption="Image caption — description of what is shown."
-        aspect="16/9"
-      />
+      <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
+        <FadeIn>
+          <UKMap />
+        </FadeIn>
+      </div>
 
       <SectionBreak label="Approach" />
 
@@ -91,7 +92,6 @@ export default function Page() {
         attribution="Name, Role at CPRD"
       />
 
-      <Figure src="/image.jpg" aspect="21/9" />
 
       <SectionBreak />
 
