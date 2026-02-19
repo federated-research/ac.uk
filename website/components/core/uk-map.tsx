@@ -5,17 +5,17 @@ import { useState } from "react";
 const SKY = "#03A9F4";
 
 const cities: { name: string; x: number; y: number }[] = [
-  { name: "Dundee", x: 640, y: 410 },
-  { name: "London", x: 1060, y: 1700 },
-  { name: "Swansea", x: 270, y: 1510 },
-  { name: "Nottingham", x: 780, y: 1280 },
-  { name: "Oxford", x: 770, y: 1550 },
-  { name: "Bristol", x: 540, y: 1570 },
-  { name: "Cambridge", x: 940, y: 1430 },
-  { name: "Canterbury", x: 1120, y: 1660 },
-  { name: "Birmingham", x: 680, y: 1370 },
-  { name: "Manchester", x: 640, y: 1160 },
-  { name: "Yorkshire", x: 730, y: 1090 },
+  { name: "Dundee", x: 740, y: 610 },
+  { name: "London SDE", x: 1170, y: 1730 },
+  { name: "SERP", x: 570, y: 1710 },
+  { name: "East Midlands SDE", x: 1040, y: 1400 },
+  { name: "Thames Valley & Surrey SDE", x: 1010, y: 1670 },
+  { name: "East of England SDE", x: 1210, y: 1600 },
+  { name: "Kent, Medway & Wessex SDE", x: 1220, y: 1840 },
+  { name: "West Midlands SDE", x: 870, y: 1510 },
+  { name: "North West SDE", x: 790, y: 1240 },
+  { name: "Yorkshire & Humber SDE", x: 960, y: 1130 },
+  { name: "North East & North Cumbria SDE", x: 830, y: 950 },
 ];
 
 const MARKER_R = 18;
