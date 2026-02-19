@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/core/fade-in";
+import { PartnerGrid } from "@/components/core/partner-grid";
 
 export default function Page() {
   return (
@@ -105,10 +106,19 @@ export default function Page() {
             <FadeIn delay={0.1} className="flex items-end">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 A network of partners working together to accelerate research.
-                (Logos!)
               </p>
             </FadeIn>
           </div>
+        </div>
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 pb-20 md:pb-28">
+          <PartnerGrid
+            partners={[
+              { name: "HDR UK", logo: "/logos/partners/hdr.svg" },
+              { name: "University of Nottingham", logo: "/logos/partners/uon.svg" },
+              { name: "NHS SDE Network", logo: "/logos/partners/sde.svg" },
+              { name: "Bunny", logo: "/logos/partners/bunny.svg" },
+            ]}
+          />
         </div>
       </section>
     </>
