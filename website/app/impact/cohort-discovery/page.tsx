@@ -26,6 +26,15 @@ export default function Page() {
       It now runs across 80% of NHS Secure Data Environments and is live on over 40 million patient records at CPRD. 
       </Summary>
 
+      <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
+        <FadeIn>
+          <UKMap />
+          <p className="text-center text-sm text-muted-foreground mt-4">
+            Across the UK, Bunny is installed in 80% of Secure Data Environments.
+          </p>
+        </FadeIn>
+      </div>
+
       <Metrics
         items={[
           { value: "11", label: "Data Partners Connected" },
@@ -50,11 +59,7 @@ export default function Page() {
         </p>
       </Prose>
 
-      <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
-        <FadeIn>
-          <UKMap />
-        </FadeIn>
-      </div>
+
 
       <SectionBreak label="Approach" />
 
@@ -75,7 +80,7 @@ export default function Page() {
         Eight NHS Secure Data Environments adopted Bunny, representing around 80% of the programme, with five contributing back to the codebase. 
         No procurement process drove this. No senior mandate. 
         Teams chose it because it worked and because they had a hand in shaping it. 
-        Commercial partners such as BC Platforms, Fitfile, Answer Digital, MetadataWorks joined the same contributor community alongside NHS staff, sustaining the tool well beyond its initial development.
+        Commercial partners such as BC Platforms, Fitfile, Answer Digital, MetadataWorks joined the same contributor community alongside the HDR UK Federated Analytics team, sustaining the tool well beyond its initial development.
         </p>
       </Prose>
 

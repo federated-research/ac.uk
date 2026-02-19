@@ -7,6 +7,7 @@ const SKY = "#03A9F4";
 const cities: { name: string; x: number; y: number }[] = [
   { name: "Dundee", x: 740, y: 610 },
   { name: "London SDE", x: 1170, y: 1730 },
+  { name: "CPRD", x: 1200, y: 1730 },
   { name: "SERP", x: 570, y: 1710 },
   { name: "East Midlands SDE", x: 1040, y: 1400 },
   { name: "Thames Valley & Surrey SDE", x: 1010, y: 1670 },
@@ -21,7 +22,19 @@ const cities: { name: string; x: number; y: number }[] = [
 const MARKER_R = 18;
 const TOOLTIP_OFFSET = 32;
 
-export function UKMap() {
+const TOOLTIP_PAD_X = 40;
+const TOOLTIP_PAD_Y = 24;
+const PX_PER_CHAR = 40;
+const LINE_HEIGHT_RATIO = 1.2;
+
+function getTooltipSize(text: string, fontSize: number) {
+  const width = TOOLTIP_PAD_X * 2 + text.length * (PX_PER_CHAR * (fontSize / 70));
+  const lineHeight = fontSize * LINE_HEIGHT_RATIO;
+  const height = TOOLTIP_PAD_Y * 2 + lineHeight;
+  return { width, height, lineHeight };
+}
+
+export function UKMap({ tooltipTitleFontSize = 70 }: { tooltipTitleFontSize?: number } = {}) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
@@ -44,19 +57,19 @@ export function UKMap() {
             className="cursor-pointer"
           >
             {/* Pulse ring */}
-            <circle cx={city.x} cy={city.y} r={MARKER_R + 8} fill={SKY} opacity={0.15}>
+            <circle cx={city.x} cy={city.y} r={MARKER_R + 10} fill={SKY} opacity={0.15}>
               <animate
                 attributeName="r"
                 from={String(MARKER_R)}
                 to={String(MARKER_R + 16)}
-                dur="2s"
+                dur="1s"
                 repeatCount="indefinite"
               />
               <animate
                 attributeName="opacity"
                 from="0.4"
-                to="0"
-                dur="2s"
+                to="0.1"
+                dur="1s"
                 repeatCount="indefinite"
               />
             </circle>
@@ -80,41 +93,43 @@ export function UKMap() {
             />
 
             {/* Tooltip */}
-            {active === city.name && (
-              <g>
-                <rect
-                  x={city.x - 100}
-                  y={city.y - TOOLTIP_OFFSET - 52}
-                  width={200}
-                  height={48}
-                  rx={0}
-                  className="fill-foreground"
-                />
-                {/* Arrow */}
-                <polygon
-                  points={`${city.x - 8},${city.y - TOOLTIP_OFFSET - 4} ${city.x + 8},${city.y - TOOLTIP_OFFSET - 4} ${city.x},${city.y - TOOLTIP_OFFSET + 6}`}
-                  className="fill-foreground"
-                />
-                <text
-                  x={city.x}
-                  y={city.y - TOOLTIP_OFFSET - 34}
-                  textAnchor="middle"
-                  className="fill-background text-[20px] font-semibold"
-                  style={{ fontFamily: "var(--font-sans)" }}
-                >
-                  Bunny install
-                </text>
-                <text
-                  x={city.x}
-                  y={city.y - TOOLTIP_OFFSET - 14}
-                  textAnchor="middle"
-                  className="fill-background/70 text-[16px]"
-                  style={{ fontFamily: "var(--font-sans)" }}
-                >
-                  {city.name}
-                </text>
-              </g>
-            )}
+            {active === city.name && (() => {
+              const { width, height, lineHeight } = getTooltipSize(
+                city.name,
+                tooltipTitleFontSize
+              );
+              const top = city.y - TOOLTIP_OFFSET - height;
+              const textY = top + TOOLTIP_PAD_Y + lineHeight * 0.8;
+              const arrowY = city.y - TOOLTIP_OFFSET;
+              return (
+                <g>
+                  <rect
+                    x={city.x - width / 2}
+                    y={top}
+                    width={width}
+                    height={height}
+                    rx={10}
+                    className="fill-foreground z-100"
+                  />
+                  <polygon
+                    points={`${city.x - 16},${arrowY - 10} ${city.x + 16},${arrowY - 10} ${city.x},${arrowY + 12}`}
+                    className="fill-foreground z-100"
+                  />
+                  <text
+                    x={city.x}
+                    y={textY}
+                    textAnchor="middle"
+                    className="fill-background font-semibold"
+                    style={{
+                      fontFamily: "var(--font-sans)",
+                      fontSize: `${tooltipTitleFontSize}px`,
+                    }}
+                  >
+                    {city.name}
+                  </text>
+                </g>
+              );
+            })()}
           </g>
         ))}
       </svg>
