@@ -9,7 +9,7 @@ const caseStudies = [
     href: "/impact/cohort-discovery",
     description:
       "Researchers need to know which patients existed in data. Now they can ask and get an answer the same day.",
-    image: "/image.jpg",
+    image: "/images/bunny-map.png",
   },
   {
     title: "Cross Border Federation: UK and Singapore",
