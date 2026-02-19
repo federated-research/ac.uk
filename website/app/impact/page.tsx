@@ -29,7 +29,7 @@ const caseStudies = [
     title: "OMOP Data Standards: Carrot",
     href: "/impact/omop-carrot",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+      "Before researchers can use health data, someone has to make it speak a common language.",
     image: "/image.jpg",
   },
 ];
