@@ -10,6 +10,7 @@ import {
 } from "@/components/core/case-study";
 import { FadeIn } from "@/components/core/fade-in";
 import { SGTimeline } from "@/components/core/sg-timeline";
+import { Map } from "@/components/core/map";
 
 export default function Page() {
   return (
@@ -26,6 +27,8 @@ export default function Page() {
       HDR UK and Singapore's National Research Foundation are building the infrastructure to change just that. 
       Connecting secure data environments across the UK and Singapore so researchers can ask questions of data they could never reach before, without that data ever leaving home.
       </Summary>
+
+      <Map />
 
       <SectionBreak label="Background" />
 
