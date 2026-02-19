@@ -8,6 +8,8 @@ import {
   Quote,
   Resources,
 } from "@/components/core/case-study";
+import { FadeIn } from "@/components/core/fade-in";
+import { SGTimeline } from "@/components/core/sg-timeline";
 
 export default function Page() {
   return (
@@ -40,11 +42,11 @@ export default function Page() {
         </p>
       </Prose>
 
-      <Figure
-        src="/image.jpg"
-        caption="Image caption — description of what is shown."
-        aspect="16/9"
-      />
+      <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
+        <FadeIn>
+          <SGTimeline />
+        </FadeIn>
+      </div>
 
       <SectionBreak label="Approach" />
 
@@ -64,6 +66,12 @@ export default function Page() {
         The first exemplar studies will focus on cancer and diabetes — two conditions where population diversity genuinely changes what the data can tell you, and where larger, more representative datasets could meaningfully change what researchers discover.
         </p>
       </Prose>
+
+      <Figure
+        src="/images/sguk.jpg"
+        caption="The project team during a recent visit to the MOH Office for Healthcare Transformation (MOHT) in Singapore, collaborating to deploy tools that bridge healthcare innovation between Singapore and the UK. Credit: MOHT"
+        aspect="16/9"
+      />
 
       <Prose>
         <p>

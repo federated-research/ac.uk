@@ -16,7 +16,7 @@ const caseStudies = [
     href: "/impact/sg-uk",
     description:
       "Two countries, one shared ambition: giving researchers access to health data across 10,000 kilometres.",
-    image: "/image.jpg",
+    image: "/images/sguk.jpg",
   },
   {
     title: "DPUK and ADDI",
