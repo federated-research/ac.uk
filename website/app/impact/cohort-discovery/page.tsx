@@ -9,6 +9,7 @@ import {
 } from "@/components/core/case-study";
 import { UKMap } from "@/components/core/uk-map";
 import { FadeIn } from "@/components/core/fade-in";
+import { WorkflowComparison } from "@/components/core/workflow-comparison";
 
 export default function Page() {
   return (
@@ -25,6 +26,8 @@ export default function Page() {
       Cohort Discovery changes that, and Bunny is the open-source tool that made it work across the NHS at scale. 
       It now runs across 80% of NHS Secure Data Environments and is live on over 40 million patient records at CPRD. 
       </Summary>
+
+      <WorkflowComparison />
 
       <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
         <FadeIn>
