@@ -11,6 +11,7 @@ import {
 import { FadeIn } from "@/components/core/fade-in";
 import { SGTimeline } from "@/components/core/sg-timeline";
 import { Map } from "@/components/core/map";
+import { DataNeverMoves } from "@/components/core/data-never-moves";
 
 export default function Page() {
   return (
@@ -61,6 +62,7 @@ export default function Page() {
         </p>
       </Prose>
 
+      <DataNeverMoves />
 
       <Prose>
         <p>

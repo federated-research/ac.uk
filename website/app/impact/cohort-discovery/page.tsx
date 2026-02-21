@@ -27,8 +27,6 @@ export default function Page() {
       It now runs across 80% of NHS Secure Data Environments and is live on over 40 million patient records at CPRD. 
       </Summary>
 
-      <WorkflowComparison />
-
       <div className="mx-auto max-w-3xl px-6 lg:px-8 py-8 md:py-12">
         <FadeIn>
           <UKMap />
@@ -76,6 +74,7 @@ export default function Page() {
         </p>
       </Prose>
 
+      <WorkflowComparison />
 
       <Prose>
         <p>
