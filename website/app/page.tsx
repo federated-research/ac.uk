@@ -18,7 +18,7 @@ export default function Page() {
               Research
             </h1>
           </FadeIn>
-          <FadeIn delay={0.1}>
+          {/* <FadeIn delay={0.1}>
             <p className="mt-8 max-w-lg text-xl text-muted-foreground leading-relaxed">
               Connecting researchers to data they can't reach.
             </p>
@@ -29,12 +29,35 @@ export default function Page() {
                 <Link href="/impact">What we've done</Link>
               </Button>
             </div>
+          </FadeIn> */}
+        </div>
+      </section>
+
+          {/* Statement */}
+      <section className="border-t bg-brand text-white">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 py-24 md:py-36">
+          <FadeIn>
+            <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
+              The Federated Research Community Group brings together the public, researchers, and industry to build trust, transparency, and collaboration in federated research.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="mt-8">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white text-sm"
+              >
+                <Link href="/community">Find out more</Link>
+              </Button>
+            </div>
           </FadeIn>
         </div>
       </section>
 
       {/* Image */}
-      <section className="border-t">
+      {/* <section className="border-t">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-1">
           <FadeIn>
             <img
@@ -47,7 +70,7 @@ export default function Page() {
       </section>
 
       {/* Pillars */}
-      <section className="border-t">
+      {/* <section className="border-t">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="grid md:grid-cols-3">
             {[
@@ -71,10 +94,10 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Statement */}
-      <section className="border-t bg-brand text-white">
+      {/* <section className="border-t bg-brand text-white">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-24 md:py-36">
           <FadeIn>
             <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
@@ -94,10 +117,10 @@ export default function Page() {
             </div>
           </FadeIn>
         </div>
-      </section>
+      </section> */}
 
       {/* Network */}
-      <section className="border-t">
+      {/* <section className="border-t">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 py-20 md:py-28">
           <div className="grid gap-8 md:grid-cols-2 md:gap-16">
             <FadeIn>
@@ -120,7 +143,7 @@ export default function Page() {
             ]}
           />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

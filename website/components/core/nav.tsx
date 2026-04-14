@@ -16,9 +16,9 @@ const navLinkClass =
 
 const links = [
   { href: "/community", label: "Community" },
-  { href: "/journey", label: "Journey" },
-  { href: "/mission", label: "Mission" },
-  { href: "/impact", label: "Impact" },
+  // { href: "/journey", label: "Journey" },
+  // { href: "/mission", label: "Mission" },
+  // { href: "/impact", label: "Impact" },
 ];
 
 export const Nav = () => {

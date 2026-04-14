@@ -11,13 +11,13 @@ export function Footer() {
             <Link href="/" className="flex items-center mb-2">
               <Logo />
             </Link>
-            <p className="mt-2 max-w-xs text-sm text-white/70">
+            {/* <p className="mt-2 max-w-xs text-sm text-white/70">
               Connecting researchers to data they can't reach.
-            </p>
+            </p> */}
           </div>
 
           <nav className="flex gap-8 text-sm text-white/70">
-            <Link href="/journey" className="hover:text-white transition-colors">
+            {/* <Link href="/journey" className="hover:text-white transition-colors">
               Journey
             </Link>
             <Link href="/mission" className="hover:text-white transition-colors">
@@ -25,7 +25,7 @@ export function Footer() {
             </Link>
             <Link href="/impact" className="hover:text-white transition-colors">
               Impact
-            </Link>
+            </Link> */}
           </nav>
         </div>
 
