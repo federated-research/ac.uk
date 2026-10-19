@@ -7,19 +7,19 @@ export default function Page() {
 
   const cards = [
     {
-      title: "Card headline",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "https://www.google.com",
+      title: "TRE-FX - What is our approach to Federation",
+      description: "An explainer video to set out the key concepts of the federated approaches from the DARE UK TRE-FX programme",
+      link: "https://www.youtube.com/watch?v=U3QKFv5Eexc",
     },
     {
-      title: "Card headline",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "https://www.google.com",
+      title: "Secure Data Environments (SDEs) Public Explainer & Survey",
+      description: "Co-designed public animation and detailed explainer on SDEs/TREs, plus a survey of the UK's main health SDEs covering funding, data held and outputs",
+      link: "https://www.understandingpatientdata.org.uk/secure-data-environments",
     },
     {
-      title: "Card headline",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "https://www.google.com",
+      title: "Five Safes Framework",
+      description: "Foundational governance framework (Safe People, Projects, Settings, Data, Outputs) underpinning TRE access and federation governance",
+      link: "https://ukdataservice.ac.uk/help/secure-lab/what-is-the-five-safes-framework/",
     },
 ]
   return (
@@ -30,19 +30,17 @@ export default function Page() {
           <FadeIn>
             <h1>Federated Research Community Group</h1>
             <Button asChild size="lg" className="text-sm mt-20">
-                <Link href="https://www.google.com/url?q=https://forms.office.com/e/9mZ7tVu9Lh&sa=D&source=editors&ust=1776184444929933&usg=AOvVaw3MmVhLfd-KQFN6ptMDMtq3">Join the Group</Link>
+                <Link href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=7qe9Z4D970GskTWEGCkKHlMNjmFrW3lHsq4prbFVNKBUQTlVMjJaTEtBQkdaRlVVREg1SjY0NDFJSC4u&route=shorturl">Join the Group</Link>
             </Button>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
             <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
-              The Federated Research Community Group brings together the public, researchers, and industry to build trust, transparency, and collaboration in federated research.
-              The group will:
-
+              Objectives
             </p>
 
           </FadeIn>
