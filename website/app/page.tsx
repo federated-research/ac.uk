@@ -33,26 +33,38 @@ export default function Page() {
         </div>
       </section>
 
-          {/* Statement */}
+{/* Statement */}
       <section className="border-t bg-brand text-white">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8 py-24 md:py-36">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 py-16 md:py-24">
           <FadeIn>
             <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
               The Federated Research Community Group brings together the public, researchers, and industry to build trust, transparency, and collaboration in federated research.
             </p>
           </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="mt-8">
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white text-sm"
-              >
-                <Link href="/community">Find out more</Link>
-              </Button>
-            </div>
-          </FadeIn>
+        </div>
+      </section>
+
+{/* Objectives */}
+      <section className="border-t pt-8 pb-20 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="space-y-8">
+            {[
+              { number: "01", title: "Drive collaboration on the safe use of sensitive, cross-sector data." },
+              { number: "02", title: "Promote engagement and shared understanding across the ecosystem and community." },
+              { number: "03", title: "Inform the needs and requirements for solutions that have utility, scalability, and flexibility." },
+            ].map((value, i) => (
+              <FadeIn key={value.number} delay={i * 0.05}>
+                <div className="flex gap-6 border-t pt-8 md:gap-12">
+                  <span className="text-3xl font-bold text-muted-foreground/30">
+                    {value.number}
+                  </span>
+                  <div>
+                    <h3>{value.title}</h3>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 

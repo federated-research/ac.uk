@@ -25,47 +25,7 @@ export default function Page() {
   return (
     <div>
 
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <FadeIn>
-            <h1>Federated Research Community Group</h1>
-            <Button asChild size="lg" className="text-sm mt-20">
-                <Link href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=7qe9Z4D970GskTWEGCkKHlMNjmFrW3lHsq4prbFVNKBUQTlVMjJaTEtBQkdaRlVVREg1SjY0NDFJSC4u&route=shorturl">Join the Group</Link>
-            </Button>
-          </FadeIn>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <FadeIn>
-            <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
-              Objectives
-            </p>
-
-          </FadeIn>
-          <div className="mt-12 space-y-8">
-            {[
-              { number: "01", title: "Drive collaboration on the safe use of sensitive, cross-sector data." },
-              { number: "02", title: "Promote engagement and shared understanding across the ecosystem and community." },
-              { number: "03", title: "Inform the needs and requirements for solutions that have utility, scalability, and flexibility." },
-            ].map((value, i) => (
-              <FadeIn key={value.number} delay={i * 0.05}>
-                <div className="flex gap-6 border-t pt-8 md:gap-12">
-                  <span className="text-3xl font-bold text-muted-foreground/30">
-                    {value.number}
-                  </span>
-                  <div>
-                    <h3>{value.title}</h3>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-muted/50 py-20 md:py-28">
+      <section className="50 py- md:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
             <SectionHeader
@@ -92,7 +52,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-      
 
     </ div>
   );
