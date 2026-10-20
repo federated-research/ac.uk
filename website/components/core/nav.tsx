@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { MenuIcon, XIcon } from "lucide-react";
+import { House, MenuIcon, XIcon } from "lucide-react";
 import { Logo } from "@/components/core/logo";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -15,7 +16,7 @@ const navLinkClass =
   "inline-flex h-9 items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none text-white/90";
 
 const links = [
-  { href: "/community", label: "Community" },
+  { href: "/resources", label: "Resources" },
   // { href: "/journey", label: "Journey" },
   // { href: "/mission", label: "Mission" },
   // { href: "/impact", label: "Impact" },
@@ -32,20 +33,43 @@ export const Nav = () => {
             <Logo />
           </Link>
 
-          {/* Desktop nav */}
-          <NavigationMenu className="hidden md:flex">
-            <NavigationMenuList>
-              {links.map((link) => (
-                <NavigationMenuItem key={link.href}>
-                  <Link href={link.href} passHref>
-                    <NavigationMenuLink className={navLinkClass}>
-                      {link.label}
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+          <div className="flex items-center gap-3">
+            {/* Desktop nav */}
+            <NavigationMenu className="hidden md:flex">
+              <NavigationMenuList>
+                {links.map((link) => (
+                  <NavigationMenuItem key={link.href}>
+                    <Link href={link.href} passHref>
+                      <NavigationMenuLink className={navLinkClass}>
+                        {link.label}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
+            <Button
+              asChild
+              size="sm"
+              className="hidden border border-white bg-white text-brand hover:bg-white/90 md:inline-flex"
+            >
+              <a
+                href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=7qe9Z4D970GskTWEGCkKHlMNjmFrW3lHsq4prbFVNKBUQTlVMjJaTEtBQkdaRlVVREg1SjY0NDFJSC4u&route=shorturl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join
+              </a>
+            </Button>
+            <Link
+              href="/"
+              aria-label="Home"
+              title="Home"
+              className="hidden size-9 items-center justify-center text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white md:inline-flex"
+            >
+              <House className="size-5" />
+            </Link>
+          </div>
 
           {/* Mobile hamburger */}
           <button
@@ -90,6 +114,30 @@ export const Nav = () => {
               {link.label}
             </Link>
           ))}
+          <div className="mt-4 flex items-center gap-3">
+            <Button
+              asChild
+              className="flex-1 bg-white text-brand hover:bg-white/90"
+            >
+              <a
+                href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=7qe9Z4D970GskTWEGCkKHlMNjmFrW3lHsq4prbFVNKBUQTlVMjJaTEtBQkdaRlVVREg1SjY0NDFJSC4u&route=shorturl"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+              >
+                Join
+              </a>
+            </Button>
+            <Link
+              href="/"
+              aria-label="Home"
+              title="Home"
+              onClick={() => setOpen(false)}
+              className="inline-flex size-10 items-center justify-center text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+            >
+              <House className="size-5" />
+            </Link>
+          </div>
         </nav>
       </div>
     </header>
