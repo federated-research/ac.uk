@@ -24,7 +24,40 @@ export default function Page() {
 ]
   return (
     <div>
-
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "80vh",
+          minHeight: 600,
+          border: "1px solid #ddd",
+          borderRadius: 8,
+          overflow: "hidden",
+        }}
+      >
+        <iframe
+          src="https://lsc-sde.github.io/federated-analytics-ontology/"
+          title="Federated Analytics Ontology"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            border: 0,
+          }}
+          loading="lazy"
+          allow="fullscreen"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+      <p style={{ fontSize: "0.9em", marginTop: "0.5em" }}>
+        <a
+          href="https://lsc-sde.github.io/federated-analytics-ontology/"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+      </p>
       <section className="50 py- md:py-28">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
