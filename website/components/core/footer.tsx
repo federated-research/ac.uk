@@ -15,6 +15,7 @@ export function Footer() {
                 { name: "HDR UK", logo: "/logos/partners/hdr.svg" },
                 { name: "University of Nottingham", logo: "/logos/partners/uon.svg" },
                 { name: "NHS SDE Network", logo: "/logos/partners/sde.svg" },
+                { name: "DARE UK", logo: "/logos/partners/dare.png" },
               ]}
             />
           </div>

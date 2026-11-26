@@ -17,6 +17,7 @@ const navLinkClass =
 
 const links = [
   { href: "/resources", label: "Resources" },
+  { href: "/outputs", label: "Outputs" }
   // { href: "/journey", label: "Journey" },
   // { href: "/mission", label: "Mission" },
   // { href: "/impact", label: "Impact" },

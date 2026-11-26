@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       {/* Hero */}
-      <section className="py-28 md:py-40">
+      <section className="py-22 md:py-34">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <FadeIn>
-            <h1 className="max-w-4xl text-6xl md:text-8xl lg:text-9xl">
-              Accelerate 
+            <h1 className="max-w-2xl text-4xl md:text-6xl lg:text-7xl">
+              Federated Research 
               <br />
-              Research
+              Community Group
             </h1>
           </FadeIn>
           {/* <FadeIn delay={0.1}>
@@ -35,10 +35,10 @@ export default function Page() {
 
 {/* Statement */}
       <section className="border-t bg-brand text-white">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8 py-16 md:py-24">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 py-12 md:py-22">
           <FadeIn>
-            <p className="text-3xl font-semibold leading-snug tracking-tight md:text-4xl max-w-3xl">
-              The Federated Research Community Group brings together the public, researchers, and industry to build trust, transparency, and collaboration in federated research.
+            <p className="text-2xl font-semibold leading-snug tracking-tight md:text-3xl max-w-3xl">
+              Bringing together the public, researchers, and industry to build trust, transparency, and collaboration in federated research.
             </p>
           </FadeIn>
         </div>
